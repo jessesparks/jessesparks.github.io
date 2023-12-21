@@ -1,0 +1,153 @@
+body{
+    background-color: rgb(26, 26, 26);
+    margin: 0;
+    padding: 0;
+    color: rgb(255, 255, 255);
+    font-family: 'Montserrat', sans-serif;
+}
+header{
+    z-index: 1;
+    position: sticky;
+    top: 0;
+    background-color: rgb(24, 61, 61);
+    min-height: 5rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+}
+.link-items{
+    color: rgb(255, 255, 255);
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-left: 0.6rem;
+    gap: 1rem;
+}
+.link-items a{
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+}
+.link-items a:hover{
+    color: rgb(120, 120, 120);
+}
+header .name{
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header .name img{
+    height: 90%;
+    width: auto;
+}
+header .name .title{
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    font-weight: 700;
+    font-style: italic;
+    padding: 0 0.5rem;
+}
+.page-items{
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    margin-right: 0.6rem;
+    text-align: center;
+}
+.page-items a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 0.75rem;
+    font-weight: 400;
+    margin: 0.6rem;
+}
+.page-items a:hover{
+    color: rgb(120, 120, 120);
+}
+main{
+    margin: 0 1rem;
+}
+.outline{
+    padding-bottom: 0.1rem;
+    border-bottom: 2px solid white;
+}
+.skill-containers{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 0.25rem;
+    margin: 0.5rem 0rem;
+}
+.skill-container{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(32, 36, 36);
+}
+.skill-container h2{
+    font-size: 1rem;
+    text-align: center;
+    margin: 0.1rem 0;
+    flex-wrap: wrap;
+    border-bottom: 1px solid white;
+}
+.skill{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 2.5rem;
+    background-color: rgb(26, 72, 72);
+    position: relative;
+    box-shadow: inset 0px 0px 0.75rem 0.25rem rgb(20, 26, 26);
+}
+.skill h3{
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-left: 0.25rem;
+}
+.skill h4{
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-right: 0.25rem;
+    margin-left: 1rem;
+}
+
+@media (min-width: 75em) {
+    .link-items a{
+        font-size: 1.8rem;
+    }
+    header .name .title{
+        font-size: 2.8rem;
+    }
+    .page-items a{
+        font-size: 1rem;
+    }
+    .link-items{
+        margin-left: 2rem;
+        gap: 2rem;
+    }
+    .page-items{
+        flex-direction: row;
+        margin-right: 2rem;
+        gap: 2rem;
+    }
+    .skill-containers{
+        gap: 2.5rem;
+        margin: 0.5rem 2.5rem;
+    }
+    .skill-container{
+        flex-wrap: none;
+    }
+    .skill-container h2{
+        font-size: 1.6rem;
+    }
+    .skill{
+        height: 2.5rem;
+    }
+}
+*{
+    box-sizing: border-box;
+}
